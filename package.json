@@ -1,14 +1,26 @@
 {
   "name": "base-self-owa",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "base self bot @open-wa automate BY Ra",
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.9",
+    "figlet": "^1.5.0",
+    "form-data": "^4.0.0",
+    "node-fetch": "^2.6.1",
+    "password-generator": "^2.3.2",
+    "qs": "^6.10.1",
+    "speed-test": "^2.1.0",
+    "canvas": "^2.8.0",
+    "dotenv": "^9.0.2"
+  },
+  "devDependencies": {},
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+	"start": "node index.js",
+    "test": "echo \\\\\\\"Error: no test specified\\\\\\\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -17,25 +29,10 @@
   "keywords": [
     "botwa",
     "baseselfbot",
-    "openwa"
+    "bot"
   ],
-  "author": "RA BOT",
+  "author": "I`am Ra",
   "license": "ISC",
-  "dependencies": {
-    "@open-wa/wa-automate": "^3.15.2",
-    "@open-wa/wa-decrypt": "^3.1.0",
-    "axios": "^0.21.1",
-    "canvas": "^2.8.0",
-    "chalk": "^4.1.1",
-    "cheerio": "^1.0.0-rc.9",
-    "dotenv": "^9.0.2",
-    "figlet": "^1.5.0",
-    "form-data": "^4.0.0",
-    "moment": "^2.29.1",
-    "node-fetch": "^2.6.1",
-    "qs": "^6.10.1",
-    "speed-test": "^2.1.0"
-  },
   "bugs": {
     "url": "https://github.com/rayyreall/Base-Self-OpenWa/issues"
   },

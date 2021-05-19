@@ -15,6 +15,7 @@ const { settings } = require("cluster");
 const { exec, spawn } = require("child_process");
 const path = require("path");
 const speed = require("performance-now");
+const randomPassword = require("password-generator")
 const print = (msg) => {
 	return console.log(msg)
 }
@@ -58,7 +59,7 @@ function Gas(ra = new Client()) {
         const isQuotedAudio = quotedMsg && (quotedMsg.type === 'audio' || quotedMsg.type === 'ptt' || quotedMsg.type === 'ppt')
         const isQuotedFile = quotedMsg && quotedMsg.type === 'document'
 		const ownerNumber = ['6282149344210@c.us', '33753045534@c.us', '79054685580@c.us']
-		const randomName = new Date().setMilliseconds() + new Date().setSeconds() + new Date().setHours() + new Date().setMinutes() * new Date().setMilliseconds()
+		const randomName = await randomPassword(12, false)
 		const NomerBot = await ra.getHostNumber()
 		const Blokir = await ra.getBlockedIds()
 		const groupId = isGroupMsg ? chat.groupMetadata.id : ''
